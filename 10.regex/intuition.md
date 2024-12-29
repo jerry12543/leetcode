@@ -1,7 +1,7 @@
 Regex Matching Intuition
 ========================
 We will check to see which prefixes of the pattern match increasingly long prefixes of the string.
-We'll first consider the base cases -- when the string prefix is '', we will only consider the pattern prefix '' and any prefix with the pattern ".*.*.*", and so on.
+We'll first consider the base cases -- when the string prefix is '', we will only consider the pattern prefix '' and any prefix with the pattern ".*" repeating.
 
 Then, we'll continue to add letters one by one to the current string prefix. We'll denote the newly added letter as currchar.
 Everytime we add a letter, we'll check to see if it matches any of the pattern prefixes:
