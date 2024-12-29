@@ -12,6 +12,6 @@ public:
             }
             complements[nums[i]] = static_cast<int>(i); // case 2
         }
-        return { -1, -1 };
+        return { -1, -1 }; // no solution
     }
 };
