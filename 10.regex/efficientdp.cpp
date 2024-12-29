@@ -13,8 +13,10 @@ public:
             prev[i] = true;
             prev[i + 1] = true;
         }
+        // loop through increasingly long prefixes of s
         for (char const currchar : s) {
             fill(curr.begin(), curr.end(), false);
+            // check s prefix against increasingly long prefixes of p
             for (size_t pind = 0; pind < p.length(); ++pind) {
                 if (currchar == p[pind] || p[pind] == '.') { // case 1
                     curr[pind + 1] = prev[pind];
