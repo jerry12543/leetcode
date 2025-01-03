@@ -18,7 +18,7 @@ struct ListNode {
 
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    static auto addTwoNumbers(ListNode* l1, ListNode* l2) -> ListNode* {
         // make sure l1 is longer than l2
         for (ListNode *l1ptr = l1, *l2ptr = l2; l2ptr; l1ptr = l1ptr->next, l2ptr = l2ptr->next) {
             if (!l1ptr) {
