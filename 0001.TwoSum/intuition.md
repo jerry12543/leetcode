@@ -8,6 +8,6 @@ We will loop through the elements in nums and do the following
 
 
 On average, the map insert and lookup are both $O(1)$ time.
-We do each O(n) times, so this solution is $O(n)$ time.
+We do each $O(n)$ times, so this solution is $O(n)$ time.
 
 The map is $O(n)$ memory, so this solution is also $O(n)$ memory.
