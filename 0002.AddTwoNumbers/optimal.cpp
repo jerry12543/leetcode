@@ -30,7 +30,7 @@ public:
         int carry = 0;
         auto* head = l1;
         ListNode* prev = nullptr;
-
+        // process digits
         for (; l1; l1 = l1->next, l2 = (!l2) ? l2 : l2->next) {
             int const l1val = l1->val;
             int const l2val = !l2 ? 0 : l2->val;
@@ -40,6 +40,7 @@ public:
             l1->val = val % 10;
             prev = l1;
         }
+        // add node if carry > 0
         if (carry != 0) {
             prev->next = new ListNode(carry);
         }
