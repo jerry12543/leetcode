@@ -11,4 +11,4 @@ We just binary search for the left partition size in array 1 that satisfies the 
 1) if totalSize is odd, the median is just the maximum element in the combined left partitions.
 2) if totalSize is even, the median is the average between the maximum element in the combined left partitions and the minimum element in the combined right partitions.
 
-This approach runs in O(log(n+m)) time and uses O(1) additional memory.
+This approach runs in O(log($n+m$)) time and uses O(1) additional memory.
