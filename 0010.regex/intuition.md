@@ -14,5 +14,5 @@ ii) the string prefix without currchar matches the current pattern prefix and cu
 We return true iff the entire pattern matches the entire string
 
 Let n denote the length of s and m denote the length of p.
-Inside the nested for loop, we do O(1) operations. We do each O(n * m) times, so this solution is O(n * m) time.
-In both the most optimal and best solution, we use O(m) memory.
+Inside the nested for loop, we do $O(1)$ operations. We do each $O(n \cdot m)$ times, so this solution is $O(n \cdot m)$ time.
+In both the most optimal and best solution, we use $O(m)$ memory.
